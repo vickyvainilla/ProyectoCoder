@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <title>DimoWorld</title>
+    </head>
+<body>
+    <body>
+        <header>
+            <section>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="logo" href="../index.html">
+                        <img src="../img/logo.png" alt="Logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                          <a class="nav-link" href="contenido.html">Contenido</a>
+                          <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                          <a class="nav-link" href="eventos.html">Eventos</a>
+                          <a class="nav-link" href="contacto.html">Contacto</a>
+                        </div>
+                      </div>
+                        <div class="redes-sociales">
+                            <a href="https://www.twitch.tv/dimouy/videos" target="_blank"><img src="../img/twitch.png" alt="twitch"></a>
+                            <!-- Colocado a modo de ejemplo, cliente aun no tiene Youtube -->
+                            <a href="https://www.youtube.com/@yotelocomparo4909" target="_blank"><img src="../img/youtube.png" alt="youtube"></a>
+                            <!-- Colocado a modo de ejemplo, cliente aun no tiene Twitter -->
+                            <a href="https://twitter.com/DIMO_Network" target="_blank"><img src="../img/twitter.png" alt="twitter"></a>
+                        </div>
+                    </div>
+                  </nav>
+            </section>
+        </header>
+        <main>
+        
+            <h2 id="headerContacto">Inscripción a Eventos</h2>
+            <p>¿Quieres ser considerado para participar en próximos eventos? Llena este formulario y nos contactaremos contigo</p>
+            <form>
+                <div class="mb-3 row">
+                    <label for="nombreTitulo" class="col-sm-3 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="InputNombre" aria-describedby="nombreHelp">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="emailTitulo" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="paisTitulo" class="col-sm-3 col-form-label">País de residencia</label>
+                    <div class="col-sm-10">
+                        <select class="form-select form-control" id="paisTitulo" aria-label="Floating label select example">
+                            <option selected>País de residencia</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+							<option value="Paraguay">Paraguay</option>
+							<option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+					<label for="fechaTitulo" class="col-sm-3 col-form-label">Fecha de Nacimiento</label>
+					<div class="col-sm-10">
+						<input type="date" class="form-control" id="InputFecha" aria-describedby="fechaHelp">
+					</div>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" value="" id="Opcion1">
+				  <label class="form-check-label" for="flexCheckDefault">
+					Opción 1
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" value="" id="Opcion2">
+				  <label class="form-check-label" for="flexCheckDefault">
+					Opción 2
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" value="" id="Opcion3">
+				  <label class="form-check-label" for="flexCheckDefault">
+					Opción 3
+				  </label>
+				</div>
+				
+				</div>
+                <div class="mb-3">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </form>
+ 
+        </main>
+    
+        <footer>
+            <div class="notificaciones">
+                <h3>Recibe notificaciones</h3>
+                <form>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </footer>
+</body>
+</html>

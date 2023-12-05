@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500&display=swap');
+
+body, main, footer {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header para todas las páginas */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Roboto Mono',monospace ;
+}
+
+/*Caracteristicas de todos los botones*/
+.contacto button, 
+.eventos button {
+    padding: 10px 20px;
+    background-color: #d6e8ea;
+    color: #020106;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+}
+
+.logo img {
+    max-width: 60px; /* Ajusta el ancho máximo del logo según tus necesidades */
+    height: auto; /* Esto permite que la altura se ajuste proporcionalmente al ancho */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociales a {
+    margin-left: 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+
+/*Página Home */
+.principal {
+    text-align: center;
+}
+
+.principal img {
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo del video en grande */
+    height: 400px; /* Ajusta la altura del video en grande */
+}
+
+
+.recientes-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner .row {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que los elementos se superpongan */
+    overflow: hidden; /* Oculta los elementos que no caben en el carrusel */
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner .col-lg-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px; /* Ajusta el margen entre las imágenes */
+}
+
+.carousel-inner .col-lg-4 img {
+    max-width: 90%; /* Ajusta el ancho máximo de las imágenes */
+    height: 80%;
+}
+
+.carousel-inner {
+    position: relative; /* Asegura que el contenedor del carrusel tenga una posición relativa */
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+  
+  /* Puedes ajustar los estilos y tamaños según tus necesidades */
+  
+
+/*Sobre Mí*/
+
+.foto-parrafo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor-img {
+    flex: 1;
+    margin-right: 20px; /* Margen derecho para separar la imagen del párrafo */
+}
+
+/* Estilo para la imagen */
+.contenedor-img img {
+    width: 90%; /* La imagen ocupará el 100% del ancho del contenedor izquierdo */
+    height: auto;
+}
+
+/* Estilo para el párrafo */
+.foto-parrafo p {
+    flex: 2; /* Ajusta el ancho del párrafo utilizando flex */
+	align-items: top;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para los elementos de lista (li) (íconos de redes sociales) */
+.redes-sociales li {
+    display: inline-block; /* Los elementos de lista se mostrarán en línea */
+    margin-right: 10px; /* Espacio entre los íconos (puedes ajustarlo según tu preferencia) */
+}
+
+/*Formularios */
+/*
+form {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#headerContacto {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+form input {
+    width: 60%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px
+    
+    
+}
+
+.checkbox-field input[type="checkbox"] {
+    margin-right: 2px;
+}
+
+form textarea {
+    width: 60%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+
+form select {
+    width: 60%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px
+}
+*/
+.checkbox input[type="checkbox"] {
+    margin-right: 2px; /* Ajusta el valor del margen según tus preferencias */
+}
+.custom-width {
+    width: 80%; /* Cambia el ancho según tus preferencias */
+    margin-left: auto; /* Alinea al centro si es necesario */
+    margin-right: auto; /* Alinea al centro si es necesario */
+}
+
+.custom-btn-width {
+    width: 50%; /* Cambia el ancho según tus preferencias */
+    margin-left: auto; /* Alinea al centro si es necesario */
+    margin-right: auto; /* Alinea al centro si es necesario */
+}
+/*Footer para todas las páginas */
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.notificaciones {
+    max-width: 600px;
+    display:block;
+    justify-content: left; /* Alinea los elementos a la izquierda */
+    align-items: center; /* Alinea verticalmente los elementos */
+
+}
+
+
+.notificaciones h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    
+}
+
+.notificaciones form {
+    display: flex;
+    align-items:  center;
+}
+
+.notificaciones input[type="email"],
+.notificaciones button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+    /* Elimina el alto del 100% para adaptarse al contenido */
+    height: auto;
+    /* Ajusta el ancho según tus necesidades */
+    width: auto;
+}
+
+
+
+
+/* Puedes agregar estilos personalizados según tus preferencias */
