@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500&display=swap');
+/*variables de fuentes*/
+$big-title-font: bold 32px 'Roboto Mono', monospace;
+$small-title-font: bold 24px 'Roboto Mono', monospace;
+$header-text-font: bold 16px 'Roboto Mono', monospace;
+$normal-text-font: normal 14px 'Roboto Mono', monospace;
+$button-text-font: normal 12px 'Roboto Mono', monospace;
+
+/*Variables de colores*/
+$darkblue: #1B264F;
+$marianblue: #274690;
+$trueblue:#576CA8;
+$YMCAblue:#444C68;
+$white: #ffffff;
+$black: #020106;
+
+/*mixin de size*/
+@mixin sizes($width,$height){
+    width: $width;
+    height: $height;
+
+}
+
+/*Header*/
+header{
+    background-color: $darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font: $header-text-font;
+}
+
+.logo img {
+    max-width: 60px; /* Ajusta el ancho máximo del logo según tus necesidades */
+    height: auto; /* Esto permite que la altura se ajuste proporcionalmente al ancho */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+nav {
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 20px;
+      
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    
+    a{
+        margin-left: 10px;
+    }
+
+    img{
+        @include sizes(30px, 30px);
+    }
+
+}
+
+main {
+    padding:20px;
+}
+
+/*Home*/
+.principal{
+    text-align: center;
+    img{
+        @include sizes(100%,400px );
+        max-width: 800px;
+    }
+}
+
+.recientes-container{
+    @include sizes(100%,auto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner {
+    position: relative; /* Asegura que el contenedor del carrusel tenga una posición relativa */
+    .row{
+        display: flex;
+        flex-wrap: nowrap; /* Evita que los elementos se superpongan */
+        overflow: hidden; /* Oculta los elementos que no caben en el carrusel */
+    }
+    .col-lg-4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+        img{
+            max-width: 90%; /* Ajusta el ancho máximo de las imágenes */
+            height: 80%;
+        }
+    }
+}
+
+.carousel-item{
+    display: flex;
+    justify-content: center;
+
+    img{
+        @include sizes(100%,auto );
+        display: block;
+    }
+}
+
+/*Sobre Mí*/
+.foto-parrafo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+
+    p {
+        flex: 2; /* Ajusta el ancho del párrafo utilizando flex */
+	    align-items: top;
+    }
+}
+
+.contenedor-img {
+    flex: 1;
+    margin-right: 20px; /* Margen derecho para separar la imagen del párrafo */
+    img {
+        @include sizes(90%,auto );
+    }
+}
+
+.redes-sociales{
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    li{
+        display: inline-block; /* Los elementos de lista se mostrarán en línea */
+        margin-right: 10px; /* Espacio entre los íconos (puedes ajustarlo según tu preferencia) */
+    }
+}
+
+/*Formularios*/
+.checkbox input[type="checkbox"] {
+    margin-right: 2px; /* Ajusta el valor del margen según tus preferencias */
+}
+.custom-width {
+    width: 80%; /* Cambia el ancho según tus preferencias */
+    margin-left: auto; /* Alinea al centro si es necesario */
+    margin-right: auto; /* Alinea al centro si es necesario */
+}
+
+.custom-btn-width {
+    width: 50%; /* Cambia el ancho según tus preferencias */
+    margin-left: auto; /* Alinea al centro si es necesario */
+    margin-right: auto; /* Alinea al centro si es necesario */
+}
+
+/*Footer*/
+footer {
+    @include sizes(100%,120px );
+    bottom: 0;
+    background-color: $darkblue;
+    color: $white;
+    padding: 10px;
+    text-align: left;
+}
+
+.notificaciones {
+    max-width: 600px;
+    display:block;
+    justify-content: left; /* Alinea los elementos a la izquierda */
+    align-items: center; /* Alinea verticalmente los elementos */
+    h3{
+        font: $header-text-font;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+    form {
+        display: flex;
+        align-items:  center;
+    }
+    input[type="email"],
+  button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font: $normal-text-font;
+    @include sizes(auto,auto );
+  }
+
+}
