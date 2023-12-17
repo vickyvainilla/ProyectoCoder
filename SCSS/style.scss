@@ -20,7 +20,26 @@ $black: #020106;
     height: $height;
 
 }
-
+/*Headers*/
+h2{
+    font: $small-title-font;
+    color: $YMCAblue;
+}
+/*Párrafos*/
+p{
+    font: $normal-text-font;
+}
+/*Botones*/
+form button[type="submit"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font: $normal-text-font;
+    background-color: $marianblue;
+    color: $white;
+    @include sizes(110px, 40px);
+  }
 /*Header*/
 header{
     background-color: $darkblue;
@@ -92,6 +111,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .carousel-inner {
@@ -157,19 +177,26 @@ main {
 }
 
 /*Formularios*/
-.checkbox input[type="checkbox"] {
-    margin-right: 2px; /* Ajusta el valor del margen según tus preferencias */
-}
-.custom-width {
-    width: 80%; /* Cambia el ancho según tus preferencias */
-    margin-left: auto; /* Alinea al centro si es necesario */
-    margin-right: auto; /* Alinea al centro si es necesario */
-}
+form{
+  /*  .checkbox input[type="checkbox"] {
+        margin-right: 2px;  Ajusta el valor del margen según tus preferencias 
+    }*/
+    .custom-width {
+        width: 80%; /* Cambia el ancho según tus preferencias */
+        margin-left: auto; /* Alinea al centro si es necesario */
+        margin-right: auto; /* Alinea al centro si es necesario */
+    }
 
-.custom-btn-width {
-    width: 50%; /* Cambia el ancho según tus preferencias */
-    margin-left: auto; /* Alinea al centro si es necesario */
-    margin-right: auto; /* Alinea al centro si es necesario */
+    .custom-btn-width {
+        width: 50%; /* Cambia el ancho según tus preferencias */
+        margin-left: auto; /* Alinea al centro si es necesario */
+        margin-right: auto; /* Alinea al centro si es necesario */
+    }
+    label, 
+    .form-control,
+    .checkbox input[type="checkbox"] {
+        font: $normal-text-font;
+}
 }
 
 /*Footer*/
@@ -198,12 +225,12 @@ footer {
     }
     input[type="email"],
   button {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    margin-right: 10px;
-    font: $normal-text-font;
-    @include sizes(auto,auto );
+    @extend button;
   }
-
+  input[type="email"]{
+    background-color: $white;
+    margin-right: 10px;
+    margin-top: 10px;
+    @include sizes(200px, 40px);
+  }
 }
