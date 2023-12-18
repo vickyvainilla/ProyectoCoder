@@ -3,7 +3,7 @@
 $big-title-font: bold 32px 'Roboto Mono', monospace;
 $small-title-font: bold 24px 'Roboto Mono', monospace;
 $header-text-font: bold 16px 'Roboto Mono', monospace;
-$normal-text-font: normal 14px 'Roboto Mono', monospace;
+$normal-text-font: normal 16px 'Roboto Mono', monospace;
 $button-text-font: normal 12px 'Roboto Mono', monospace;
 
 /*Variables de colores*/
@@ -38,7 +38,7 @@ form button[type="submit"] {
     font: $normal-text-font;
     background-color: $marianblue;
     color: $white;
-    @include sizes(110px, 40px);
+    @include sizes(125px, 40px);
   }
 /*Header*/
 header{
@@ -54,6 +54,14 @@ header{
     max-width: 60px; /* Ajusta el ancho máximo del logo según tus necesidades */
     height: auto; /* Esto permite que la altura se ajuste proporcionalmente al ancho */
     margin-right: 10px; /* Espacio entre el logo y el texto */
+    &:hover{
+        animation-name: movimientoLogo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+    }
+
 }
 
 nav {
@@ -178,9 +186,7 @@ main {
 
 /*Formularios*/
 form{
-  /*  .checkbox input[type="checkbox"] {
-        margin-right: 2px;  Ajusta el valor del margen según tus preferencias 
-    }*/
+
     .custom-width {
         width: 80%; /* Cambia el ancho según tus preferencias */
         margin-left: auto; /* Alinea al centro si es necesario */
@@ -231,6 +237,24 @@ footer {
     background-color: $white;
     margin-right: 10px;
     margin-top: 10px;
-    @include sizes(200px, 40px);
+    @include sizes(250px, 40px);
   }
+}
+
+@keyframes movimientoLogo {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }

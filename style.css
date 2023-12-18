@@ -11,7 +11,7 @@ h2 {
 
 /*Párrafos*/
 p {
-  font: normal 14px "Roboto Mono", monospace;
+  font: normal 16px "Roboto Mono", monospace;
 }
 
 /*Botones*/
@@ -22,10 +22,10 @@ form .notificaciones button[type=submit],
   border: none;
   border-radius: 4px;
   margin-top: 10px;
-  font: normal 14px "Roboto Mono", monospace;
+  font: normal 16px "Roboto Mono", monospace;
   background-color: #274690;
   color: #ffffff;
-  width: 110px;
+  width: 125px;
   height: 40px;
 }
 
@@ -43,6 +43,13 @@ header {
   max-width: 60px; /* Ajusta el ancho máximo del logo según tus necesidades */
   height: auto; /* Esto permite que la altura se ajuste proporcionalmente al ancho */
   margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+.logo img:hover {
+  animation-name: movimientoLogo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
 }
 
 nav ul {
@@ -157,11 +164,6 @@ main {
 }
 
 /*Formularios*/
-form {
-  /*  .checkbox input[type="checkbox"] {
-        margin-right: 2px;  Ajusta el valor del margen según tus preferencias 
-    }*/
-}
 form .custom-width {
   width: 80%; /* Cambia el ancho según tus preferencias */
   margin-left: auto; /* Alinea al centro si es necesario */
@@ -175,7 +177,7 @@ form .custom-btn-width {
 form label,
 form .form-control,
 form .checkbox input[type=checkbox] {
-  font: normal 14px "Roboto Mono", monospace;
+  font: normal 16px "Roboto Mono", monospace;
 }
 
 /*Footer*/
@@ -208,8 +210,26 @@ footer {
   background-color: #ffffff;
   margin-right: 10px;
   margin-top: 10px;
-  width: 200px;
+  width: 250px;
   height: 40px;
+}
+
+@keyframes movimientoLogo {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
