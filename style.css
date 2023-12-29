@@ -46,7 +46,7 @@ header {
 }
 .logo img:hover {
   animation-name: movimientoLogo;
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 1s;
