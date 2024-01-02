@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500&display=swap');
 /*variables de fuentes*/
-$big-title-font: bold 32px 'Roboto Mono', monospace;
-$small-title-font: bold 24px 'Roboto Mono', monospace;
+$big-title-font: bold 24px 'Roboto Mono', monospace;
+$small-title-font: bold 20px 'Roboto Mono', monospace;
 $header-text-font: bold 16px 'Roboto Mono', monospace;
 $normal-text-font: normal 16px 'Roboto Mono', monospace;
 $button-text-font: normal 12px 'Roboto Mono', monospace;
@@ -21,10 +21,15 @@ $black: #020106;
 
 }
 /*Headers*/
+h1{
+    font: $big-title-font;
+    color: $YMCAblue;
+}
 h2{
     font: $small-title-font;
     color: $YMCAblue;
 }
+
 /*Párrafos*/
 p{
     font: $normal-text-font;
