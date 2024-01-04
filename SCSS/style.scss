@@ -106,9 +106,14 @@ nav {
 
 }
 
+.navbar-toggler {
+    background-color: $trueblue !important; /* Color por defecto del botón */
+  }
+
 main {
     padding:20px;
 }
+
 
 /*Home*/
 .principal{
@@ -218,6 +223,8 @@ footer {
     color: $white;
     padding: 10px;
     text-align: left;
+    position: fixed; /* Fija el footer */
+    bottom: 0;
 }
 
 .notificaciones {

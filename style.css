@@ -87,6 +87,10 @@ nav a {
   height: 30px;
 }
 
+.navbar-toggler {
+  background-color: #576CA8 !important; /* Color por defecto del botón */
+}
+
 main {
   padding: 20px;
 }
@@ -194,6 +198,8 @@ footer {
   color: #ffffff;
   padding: 10px;
   text-align: left;
+  position: fixed; /* Fija el footer */
+  bottom: 0;
 }
 
 .notificaciones {
