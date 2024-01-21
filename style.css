@@ -95,6 +95,39 @@ main {
   padding: 20px;
 }
 
+/* Estilo para dispositivos móviles */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column; /* Cambia la dirección del contenedor a columna */
+    text-align: center;
+  }
+  .logo {
+    margin-bottom: 10px; /* Añade espacio entre el logo y la barra de navegación en dispositivos móviles */
+  }
+  nav ul {
+    flex-direction: column; /* Muestra los elementos de navegación en una columna */
+    align-items: center;
+  }
+  .redes-sociales {
+    margin-top: 10px; /* Añade espacio entre la barra de navegación y las redes sociales en dispositivos móviles */
+  }
+  main {
+    padding: 10px; /* Ajusta el espacio alrededor del contenido principal en dispositivos móviles */
+  }
+  .principal img {
+    height: auto; /* Ajusta la altura de la imagen automáticamente en dispositivos móviles */
+  }
+  .recientes-container {
+    display: block; /* Cambia el contenedor de recientes a bloque para dispositivos móviles */
+  }
+  .carousel-inner .row {
+    flex-wrap: wrap; /* Permite que las miniaturas del carrusel se envuelvan en dispositivos móviles */
+  }
+  .carousel-inner .col-lg-4 {
+    flex: 0 0 100%; /* Hace que las miniaturas del carrusel ocupen el 100% del ancho en dispositivos móviles */
+    margin: 10px 0; /* Añade espacio entre las miniaturas del carrusel en dispositivos móviles */
+  }
+}
 /*Home*/
 .principal {
   text-align: center;
@@ -158,9 +191,14 @@ main {
   flex: 1;
   margin-right: 20px; /* Margen derecho para separar la imagen del párrafo */
 }
+
 .contenedor-img img {
-  width: 90%;
+  width: 100%;
   height: auto;
+  /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+  max-width: 400px; /* Limita el ancho máximo de la imagen para que no sea demasiado grande en pantallas grandes */
+  display: block; /* Evita el espacio adicional debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
 .redes-sociales ul {
